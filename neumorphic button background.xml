@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main surface with inset appearance -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+            <solid android:color="@color/neumorphic_background" />
+            <stroke android:width="1dp" android:color="@color/neumorphic_shadow_dark" />
+        </shape>
+    </item>
+    <!-- Inner highlight -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="18dp" />
+            <stroke android:width="1dp" android:color="@color/neumorphic_shadow_light" />
+        </shape>
+    </item>
+</layer-list>
